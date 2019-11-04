@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 	"net/http"
-	"os"
 	"time"
 )
 
@@ -46,10 +45,7 @@ func languagesHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		log.Fatal("Error getting $port")
-	}
+	port := "5632"
 	serverstart := int(time.Now().Unix()) //logging unix time of server start as
 	//a global variable, used as parameter above
 	seconds = serverstart
