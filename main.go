@@ -55,5 +55,5 @@ func main() {
 	http.HandleFunc("/repocheck/v1/webhooks/", webhookHandler)
 	//http.HandleFunc("/repocheck/v1/service/", serviceHandler)
 
-	log.Fatal(http.ListenAndServe(":"+port, nil)) //server on port 5067
+	log.Fatal(http.ListenAndServe(":"+port, nil)) //server on port 5632
 }
