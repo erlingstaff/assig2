@@ -50,7 +50,7 @@ func main() {
 	//a global variable, used as parameter above
 	seconds = serverstart
 	http.HandleFunc("/repocheck/v1/commits/", commitHandler) //3 different handlers
-	http.HandleFunc("/repocheck/v1/issues/", languagesHandler)
+	http.HandleFunc("/repocheck/v1/languages/", languagesHandler)
 	http.HandleFunc("/repocheck/v1/status/", statusHandler)
 	http.HandleFunc("/repocheck/v1/webhooks/", webhookHandler)
 	//http.HandleFunc("/repocheck/v1/service/", serviceHandler)
